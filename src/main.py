@@ -1,12 +1,13 @@
-from MediaWikiDumpReader import MediaWikiDumpReader as DumpReader
+from wiki_reader import MediaWikiDumpReader as DumpReader
 import os.path
 
 
-def load_gazeteer(gazeteer_path):
-    file = open(gazeteer_path, "r")
+def load_gazetteer(gazetteer_path):
+    file = open(gazetteer_path, "r")
     keywords = file.read().lower().split('\n')
     file.close()
     return keywords
+
 
 if __name__ == "__main__":
     current_directory = os.path.dirname(__file__)
@@ -14,17 +15,12 @@ if __name__ == "__main__":
 
     xml_path = "D:/skola/enwiki/enwiki_dump.xml"
     firstname_path = os.path.join(parent_directory, 'data', 'firstnames.txt', )
-    surename_path = os.path.join(parent_directory, 'data', 'surenames.txt', )
+    surname_path = os.path.join(parent_directory, 'data', 'surnames.txt', )
 
-    # load gazeteers
-    gazeteers = {}
-
-    gazeteers['firstnames'] = load_gazeteer(firstname_path)
-    gazeteers['surenames'] = load_gazeteer(surename_path)
+    # load gazetteers
+    gazetteers = {'firstnames': load_gazetteer(firstname_path), 'surnames': load_gazetteer(surname_path)}
 
     with open(xml_path, 'rb') as in_xml:
-        for record in DumpReader(in_xml, gazeteers):
+        for record in DumpReader(in_xml, gazetteers):
             print("record:{}".format(record))
-
-
 
