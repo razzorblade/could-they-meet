@@ -22,6 +22,10 @@ class MediaWikiDumpReader:
         self.gazetteers = gazetteers
         self.export_info = export_info
 
+    def __del__(self):
+        if self.export_info[0] and not self.write_file.closed:
+            self.write_file.close()
+
     def _start_parse(self):
         for event, element in self.context:
             yield event, element
@@ -33,7 +37,7 @@ class MediaWikiDumpReader:
     def __iter__(self):
 
         if self.export_info[0]:
-            write_file = open(self.export_info[1], "w", encoding="utf-8")
+            self.write_file = open(self.export_info[1], "w", encoding="utf-8")
 
         for event, elem in self._start_parse():
             entity = {}
@@ -87,11 +91,11 @@ class MediaWikiDumpReader:
                 if self.export_info[0]:
                     write_str = entity["name"] + "," + entity["birth_date"].__repr__() + "," + entity["death_date"].__repr__() + "\n"
                     # noinspection PyUnboundLocalVariable
-                    write_file.write(write_str)
+                    self.write_file.write(write_str)
                 yield entity
 
         if self.export_info[0]:
-            write_file.close()
+            self.write_file.close()
 
     @staticmethod
     def extract_birth_date(line):

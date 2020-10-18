@@ -27,10 +27,11 @@ class TestMediaWikiDumpReader(TestCase):
         self.in_xml = open(dump_split_path, 'rb')
         self.reader = DumpReader(self.in_xml, gazetteers, (True, exported_path))
 
-class TestRead(TestMediaWikiDumpReader):
     def tearDown(self):
         self.in_xml.close()
         self.reader = None
+
+class TestRead(TestMediaWikiDumpReader):
 
     def test_export_first_lines(self):
         count = 0
