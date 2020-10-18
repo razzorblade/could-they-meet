@@ -8,6 +8,9 @@ class DateExport:
     day = int
 
     def __init__(self, year, month, day):
+        """
+        Initialize DateExport with year month and day values
+        """
         self.year = year
         self.month = month
         self.day = day

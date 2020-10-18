@@ -10,6 +10,14 @@ import html
 class MediaWikiDumpReader:
 
     def __init__(self, file_path=str, gazetteers=(str, list), export_info=(bool, str)):
+        """
+       Initialize dump reader to correctly read dump and use additional required information
+
+       :param file_path: String path to unzipped xml dump file from wikipedia
+       :param gazetteers: Gazetteers containing keywords for "firstnames" and "surnames"
+       :param export_info: Info used to export found persons in wikipedia dump. This is a tuple of
+                           bool and str telling whether to export to file and path to this file
+       """
         self.context = etree.iterparse(file_path, events=("end",), tag=['{*}page'])
         self.gazetteers = gazetteers
         self.export_info = export_info
@@ -87,9 +95,14 @@ class MediaWikiDumpReader:
 
     @staticmethod
     def extract_birth_date(line):
+        """
+        Matches a birth date from line using regex
+
+        :param line: String with wikipedia text from which birth date will be exported, if present
+        """
         if "birth date" in line:
             # birth is in format [1]year [2]month [3]day
-            birth_date_match = re.search("(?:birth date|birth date and age)(?:\|df=yes|\|mf=yes|\s+){0,1}\|([0-9]{4})\|([0-9]{1,2})\|([0-9]{1,2})", line)
+            birth_date_match = re.search("(?:birth date|birth date and age)(?:\|df=yes|\|mf=yes|\s+)?\|([0-9]{4})\|([0-9]{1,2})\|([0-9]{1,2})", line)
 
             if birth_date_match:
                 return True, DateExport(int(birth_date_match[1]), int(birth_date_match[2]), int(birth_date_match[3]))
@@ -98,9 +111,14 @@ class MediaWikiDumpReader:
 
     @staticmethod
     def extract_death_date(line):
+        """
+        Matches a death date from line using regex
+
+        :param line: String with wikipedia text from which death date will be exported, if present
+        """
         if "death date" in line:
             # birth is in format [1]year [2]month [3]day
-            death_date_match = re.search("(?:death date|death date and age)(?:\|df=yes|\|mf=yes|\s+){0,1}\|([0-9]{4})\|([0-9]{1,2})\|([0-9]{1,2})\s*\|", line)
+            death_date_match = re.search("(?:death date|death date and age)(?:\|df=yes|\|mf=yes|\s+)?\|([0-9]{4})\|([0-9]{1,2})\|([0-9]{1,2})\s*\|", line)
 
             if death_date_match:
                 return True, DateExport(int(death_date_match[1]), int(death_date_match[2]), int(death_date_match[3]))
