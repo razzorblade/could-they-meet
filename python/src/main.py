@@ -4,7 +4,7 @@ import os.path
 
 
 RUN_SPLIT = False
-SPLIT_SIZE = 1000000000
+SPLIT_SIZE = 2000000000
 
 
 def load_gazetteer(gazetteer_path):
