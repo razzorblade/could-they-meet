@@ -1,6 +1,7 @@
 from parsers.wiki_reader import MediaWikiDumpReader as DumpReader
 from parsers.wiki_splitter import MediaWikiDumpSplitter
 from utilities.runtime_constants import RuntimeConstants as Constants
+from utilities.utils import get_smart_file_size
 import os.path
 import signal
 import sys, getopt
@@ -69,6 +70,7 @@ def main(argv):
             print("Sorry, splitter is not able to track progress currently.")
 
         splitter = MediaWikiDumpSplitter(input_file, output_file, split_size)
+        print("Splitter started export. Goal size is", get_smart_file_size(split_size))
         splitter.export_chunk()
         exit(0)
 

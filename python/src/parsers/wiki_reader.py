@@ -64,7 +64,7 @@ class MediaWikiDumpReader:
             # Report progress
             if self.verbose:
                 progress += sys.getsizeof(inner_page) / self.size
-                utils.update_progress(utils.max_clamp(progress, 0.99))
+                utils.update_progress(utils.max_clamp(progress, 0.9999))
 
             # Check if this page is a redirect to another page, therefore, processing will be skipped
             redirect_match = re.search("<redirect title=\"(.*)\"\/>", inner_page)
@@ -82,49 +82,55 @@ class MediaWikiDumpReader:
             for line in wrap(html.unescape(inner_page), 5000):
 
                 line = line.strip().lower()
+                try:
+                    # Try to find birth and death dates in current line
+                    if not birth_date_found:
+                        (birth_date_found, birth_date) = self.extract_birth_date(line, exported_title)
+                    if not death_date_found:
+                        (death_date_found, death_date) = self.extract_death_date(line, exported_title)
 
-                # Try to find birth and death dates in current line
-                if not birth_date_found:
-                    (birth_date_found, birth_date) = self.extract_birth_date(line, exported_title)
-                if not death_date_found:
-                    (death_date_found, death_date) = self.extract_death_date(line, exported_title)
-
-                # If nothing was found, do text search
-                if not birth_date_found and not death_date_found:
-                    (birth_date_found, birth_date, death_date_found, death_date) = self.extract_fulltext_dates(inner_page, line, exported_title)
+                    # If nothing was found, do text search
+                    if not birth_date_found and not death_date_found:
+                        (birth_date_found, birth_date, death_date_found, death_date) = self.extract_fulltext_dates(inner_page, line, exported_title)
 
 
-                # Set entity fields if dates were found. If death date not found, do
-                # additional statistical check whether person is still alive
-                if birth_date_found:
-                    entity["birth_date"] = birth_date
+                    # Set entity fields if dates were found. If death date not found, do
+                    # additional statistical check whether person is still alive
+                    if birth_date_found:
+                        entity["birth_date"] = birth_date
 
-                if death_date_found:
-                    entity["death_date"] = death_date
-                elif birth_date_found:
-                    # Person that does not have death date might be alive
-                    if Constants.CURRENT_YEAR - birth_date.year <= Constants.MAXIMUM_ALLOWED_AGE:
-                        entity["death_date"] = "alive"
-                        death_date = "alive"
-                        death_date_found = True
+                    if death_date_found:
+                        entity["death_date"] = death_date
+                    elif birth_date_found:
+                        # Person that does not have death date might be alive
+                        if Constants.CURRENT_YEAR - birth_date.year <= Constants.MAXIMUM_ALLOWED_AGE:
+                            entity["death_date"] = "alive"
+                            death_date = "alive"
+                            death_date_found = True
 
-                # Update export_flag. We wont have to search for more, if both dates were found
-                export_flag = birth_date_found and death_date_found
-                if export_flag:
-                    correct_age = DateExport.is_correct_age(birth_date, death_date)
-                    break
+                    # Update export_flag. We wont have to search for more, if both dates were found
+                    export_flag = birth_date_found and death_date_found
+                    if export_flag:
+                        correct_age = DateExport.is_correct_age(birth_date, death_date)
+                        break
+                except:
+                    # Any error during export
+                    if self.verbose:
+                        print("\nRecovering from export error caused at", exported_title, "...")
+
+                    export_flag = False
 
             if export_flag and correct_age:
                 if self.export_info[0]:
                     write_str = entity["name"] + "," + entity["birth_date"].__repr__() + "," + entity["death_date"].__repr__() + "\n"
-                    # noinspection PyUnboundLocalVariable
                     self.write_file.write(write_str)
                 yield entity
 
         if self.export_info[0]:
             self.write_file.close()
 
-        utils.update_progress(1)
+        if self.verbose:
+            utils.update_progress(1)
 
     @staticmethod
     def extract_birth_date(line, title):
