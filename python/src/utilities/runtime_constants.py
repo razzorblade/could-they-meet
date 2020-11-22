@@ -1,3 +1,5 @@
 class RuntimeConstants:
     MAXIMUM_ALLOWED_AGE = 95
     CURRENT_YEAR = 2020
+    RUN_SPLIT = False
+    SPLIT_SIZE = 2000000000

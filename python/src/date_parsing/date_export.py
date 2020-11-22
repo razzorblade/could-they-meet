@@ -1,4 +1,4 @@
-import attr_type_constraint
+from utilities import attr_type_constraint
 import re
 from date_parsing.date_format import DateFormat
 

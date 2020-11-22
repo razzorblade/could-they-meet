@@ -1,5 +1,5 @@
 from unittest import TestCase
-from wiki_reader import MediaWikiDumpReader as DumpReader
+from parsers.wiki_reader import MediaWikiDumpReader as DumpReader
 import os
 from pathlib import Path
 
