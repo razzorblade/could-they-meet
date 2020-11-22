@@ -85,6 +85,25 @@ class DateExport:
             'december': 12
         }[month_name.lower()]
 
+    @staticmethod
+    def is_correct_age(birth, death):
+        if birth is None:
+            return False
+
+        if death == "alive":
+            return True
+
+        if not birth.BC and not death.BC:
+            return birth.year < death.year
+        elif birth.BC and not death.BC:
+            return True
+        elif not birth.BC and death.BC:
+            return False
+        elif birth.BC and death.BC:
+            return birth.year > death.year
+
+        return False
+
     def __sub__(self, o):
         return DateExport(self.year - o.year, self.month - o.month, self.day - o.day)
 

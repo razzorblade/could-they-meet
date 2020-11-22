@@ -1,7 +1,7 @@
 from wiki_reader import MediaWikiDumpReader as DumpReader
 from wiki_splitter import MediaWikiDumpSplitter
 import os.path
-
+import utils
 
 RUN_SPLIT = False
 SPLIT_SIZE = 2000000000
@@ -34,6 +34,6 @@ if __name__ == "__main__":
     gazetteers = {'firstnames': load_gazetteer(firstname_path), 'surnames': load_gazetteer(surname_path)}
 
     with open(dump_split_path, 'rb') as in_xml:
-        for record in DumpReader(in_xml, gazetteers, (True, exported_path)):
-            print("record:{}".format(record))
-
+        for record in DumpReader(dump_split_path, in_xml, gazetteers, (True, exported_path)):
+           # print("record:{}".format(record))
+            pass
