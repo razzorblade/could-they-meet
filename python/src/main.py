@@ -20,17 +20,17 @@ def search_person(file):
     name1 = input("Enter name of first person:  ")
     name2 = input("Enter name of second person: ")
 
-    n1_found, n2_found = False
+    n1_found, n2_found = False, False
 
     with open(file, 'r') as read_obj:
         for line in read_obj:
             # For each line, check if line contains the string
             if not n1_found and name1 in line:
                 n1_found = True
-                print(line)
+                print(line.replace("\n",""))
             if not n2_found and name2 in line:
                 n2_found = True
-                print(line)
+                print(line.replace("\n",""))
 
             if n1_found and n2_found:
                 break
