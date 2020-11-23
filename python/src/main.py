@@ -16,19 +16,46 @@ def signal_handler(sig, frame):
     print('\nParsing interrupted. All parsed content is in output file.')
     sys.exit(0)
 
+def search_person(file):
+    name1 = input("Enter name of first person:  ")
+    name2 = input("Enter name of second person: ")
+
+    n1_found, n2_found = False
+
+    with open(file, 'r') as read_obj:
+        for line in read_obj:
+            # For each line, check if line contains the string
+            if not n1_found and name1 in line:
+                n1_found = True
+                print(line)
+            if not n2_found and name2 in line:
+                n2_found = True
+                print(line)
+
+            if n1_found and n2_found:
+                break
+
+    if not n1_found:
+        print("Could not find person", name1)
+    if not n2_found:
+        print("Could not find person", name2)
+
 def main(argv):
     # Options and their arguments
-    opts, args = getopt.getopt(sys.argv[1:], "", ["input=", "output=", "verbose", "splitter="])
+    opts, args = getopt.getopt(sys.argv[1:], "", ["input=", "output=", "verbose", "splitter=", "search"])
 
     output_file = None
     input_file = None
     verbose = False
     run_split = False
     split_size = 0
+    search = False
 
     for o, a in opts:
         if o == "--verbose":
             verbose = True
+        elif o == "--search":
+            search = True
         elif o == "--output":
             output_file = a
         elif o == "--input":
@@ -40,6 +67,10 @@ def main(argv):
             except:
                 print("Split size is not in correct format.")
                 exit(1)
+
+    if search:
+        search_person(input_file)
+        exit(0)
 
     # If running from PyCharm
     if output_file is None or input_file is None:
@@ -75,7 +106,7 @@ def main(argv):
         exit(0)
 
     # load gazetteers
-   # gazetteers = {'firstnames': load_gazetteer(firstname_path), 'surnames': load_gazetteer(surname_path)}
+    # gazetteers = {'firstnames': load_gazetteer(firstname_path), 'surnames': load_gazetteer(surname_path)}
 
     with open(input_file, 'rb') as in_xml:
         for record in DumpReader(input_file, in_xml, None, (True, output_file), verbose):

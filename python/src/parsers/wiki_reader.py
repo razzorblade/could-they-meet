@@ -78,9 +78,9 @@ class MediaWikiDumpReader:
             birth_date_found = False
             death_date_found = False
             correct_age = False
+
             # Go line by line
             for line in wrap(html.unescape(inner_page), 5000):
-
                 line = line.strip().lower()
                 try:
                     # Try to find birth and death dates in current line
@@ -92,7 +92,6 @@ class MediaWikiDumpReader:
                     # If nothing was found, do text search
                     if not birth_date_found and not death_date_found:
                         (birth_date_found, birth_date, death_date_found, death_date) = self.extract_fulltext_dates(inner_page, line, exported_title)
-
 
                     # Set entity fields if dates were found. If death date not found, do
                     # additional statistical check whether person is still alive
@@ -338,14 +337,14 @@ class MediaWikiDumpReader:
 
         if is_person:
             # Replace special chars so we can reduce amount of cases in regex
-            rep = {"&ndash;": "-", "&nbsp;": "", "{{snd}}" : "-"}
+            rep = {"&ndash;": "-", "&nbsp;": " ", "{{snd}}" : "-"}
             rep = dict((re.escape(k), v) for k, v in rep.items())
             pattern = re.compile("|".join(rep.keys()))
             line = pattern.sub(lambda m: rep[re.escape(m.group(0))], line)
 
             # Try to find birth date in text
             # FORMAT: Name Surname (DD Month YYYY {{snd}} DD Month YYYY)
-            match = re.search(title.lower() + r"\W+\((\d{1,2})\W+([a-zA-Z]+)\W+?(\d+)\W*?(?:-| |to)\W*?(\d{1,2})\W+?([a-zA-Z]+)\W+(\d+)\W*\)", line)
+            match = re.search(title.lower() + r"\W+\((\d{1,2})\W+([a-zA-Z]+)\W+?(\d+)\W*?(?:-| |to)\W*?(\d{1,2})\W+?([a-zA-Z]+)\W+(\d+).*?\)", line)
 
             if match:
                 birth = DateExport(int(match[3]),DateExport.month_to_num(match[2]), int(match[1]))
@@ -363,8 +362,6 @@ class MediaWikiDumpReader:
                 return True, DateExport.from_format(match[1], DateFormat.YEAR_ONLY), True, DateExport.from_format(
                     match[2], DateFormat.YEAR_ONLY)
 
-
-
          #   # FORMAT: Name (names...) Surname (born Month DD, YYYY)
          #   birth_date_match = re.search("([a-zA-Z\W]*) born ([a-zA-Z]+ \d{1,2},\W*\d{4})", line)
 
@@ -376,5 +373,3 @@ class MediaWikiDumpReader:
          #       return True, DateExport.from_format(birth_date_match[2], DateFormat.AS_TEXT)
 
         return False, None, False, None
-
-
