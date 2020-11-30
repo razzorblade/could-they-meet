@@ -38,6 +38,8 @@ Size must be specified in bytes. For example `python main.py --splitter 20000000
 
 ```sh
 > python main.py --search --input path/dump_export.txt
-Enter name of first person:  Albert Einstein
-Enter name of second person: Elvis Presley
+> Enter name of first person:  Albert Einstein
+> Enter name of second person: Elvis Presley
+Albert Einstein,14.3.1879 (BC: False),18.4.1955 (BC: False)
+Elvis Presley,8.1.1935 (BC: False),16.8.1977 (BC: False)
 ```
