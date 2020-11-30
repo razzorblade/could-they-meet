@@ -2,6 +2,7 @@ from parsers.wiki_reader import MediaWikiDumpReader as DumpReader
 from parsers.wiki_splitter import MediaWikiDumpSplitter
 from utilities.runtime_constants import RuntimeConstants as Constants
 from utilities.utils import get_smart_file_size
+from search.export_search import ExportSearch
 import os.path
 import signal
 import sys, getopt
@@ -17,28 +18,25 @@ def signal_handler(sig, frame):
     sys.exit(0)
 
 def search_person(file):
-    name1 = input("Enter name of first person:  ")
-    name2 = input("Enter name of second person: ")
+   # name1 = input("Enter name of first person:  ")
+   # name2 = input("Enter name of second person: ")
 
-    n1_found, n2_found = False, False
+    file = "../data/whole_wiki_parsed.txt"
+    search = ExportSearch("people")
 
-    with open(file, 'r') as read_obj:
-        for line in read_obj:
-            # For each line, check if line contains the string
-            if not n1_found and name1 in line:
-                n1_found = True
-                print(line.replace("\n",""))
-            if not n2_found and name2 in line:
-                n2_found = True
-                print(line.replace("\n",""))
+   # To create index and build types
+    #search.prepare_elasticsearch()
 
-            if n1_found and n2_found:
-                break
+   # To build new index and insert all data from file
+    #search.insert_data(file, 10000)
 
-    if not n1_found:
-        print("Could not find person", name1)
-    if not n2_found:
-        print("Could not find person", name2)
+    name1 = input("Enter first name: ")
+    res = search.find(name1)
+    print(res)
+
+    name1 = input("Enter first name: ")
+    res = search.find(name1)
+    print(res)
 
 def main(argv):
     # Options and their arguments
@@ -49,7 +47,7 @@ def main(argv):
     verbose = False
     run_split = False
     split_size = 0
-    search = False
+    search = True
 
     for o, a in opts:
         if o == "--verbose":
@@ -78,8 +76,6 @@ def main(argv):
         parent_directory = os.path.split(current_directory)[0]
 
         try:
-            firstname_path = os.path.join(parent_directory, 'data', 'firstnames.txt', )
-            surname_path = os.path.join(parent_directory, 'data', 'surnames.txt', )
             input_file = os.path.join(parent_directory, 'data', 'dump_split.xml')
             output_file = os.path.join(parent_directory, 'data', 'dump_export.txt')
 
@@ -104,9 +100,6 @@ def main(argv):
         print("Splitter started export. Goal size is", get_smart_file_size(split_size))
         splitter.export_chunk()
         exit(0)
-
-    # load gazetteers
-    # gazetteers = {'firstnames': load_gazetteer(firstname_path), 'surnames': load_gazetteer(surname_path)}
 
     with open(input_file, 'rb') as in_xml:
         for record in DumpReader(input_file, in_xml, None, (True, output_file), verbose):

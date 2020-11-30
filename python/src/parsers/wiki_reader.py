@@ -325,7 +325,7 @@ class MediaWikiDumpReader:
 
         # Check if it is a person
         person_check = re.search(
-            r"\[\[Category:.*?(births|actors|actor|people|winner|winners|woman|women|man|men|singers|singer|politician|deaths|photographers|artists|wrestlers|)\]\]",
+            r"\[\[Category:.*?(births|actors|actor|painters|painter|lutherans|people|winner|winners|woman|women|man|men|singers|singer|politician|deaths|photographers|artists|wrestlers|)\]\]",
             fulltext)
 
         is_person = False
