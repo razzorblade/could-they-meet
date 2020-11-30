@@ -32,7 +32,7 @@ Progress: [====                ] 20.58%
 Size must be specified in bytes. For example `python main.py --splitter 2000000000 --input path/wikipedia.xml --output path/dump_split.xml`, will export 2GB of data into file dump_export.xml. The final size may be different from requested size, because splitter is also correctly ending `<page>` so there won't be any data without corresponding ending tags.
 
 # How to run person search
-1. Make sure you have file with exported people. You can download one from `data/dump_export.txt`.
+1. Make sure you have file with exported people. You can download one from `data/whole_wiki_parsed.txt`.
 2. Go to could-they-meet/src/
 3. Run
 
