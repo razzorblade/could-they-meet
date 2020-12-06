@@ -1,0 +1,567 @@
+Abraham Lincoln,12.2.1809 (BC: False),15.4.1865 (BC: False)
+Ayn Rand,2.2.1905 (BC: False),6.3.1982 (BC: False)
+Alain Connes,1.4.1947 (BC: False),'alive'
+Allan Dwan,3.4.1885 (BC: False),28.12.1981 (BC: False)
+Andre Agassi,29.4.1970 (BC: False),'alive'
+Aldous Huxley,26.7.1894 (BC: False),22.11.1963 (BC: False)
+Andrei Tarkovsky,4.4.1932 (BC: False),29.12.1986 (BC: False)
+Arthur Schopenhauer,22.2.1788 (BC: False),21.9.1860 (BC: False)
+Albert Sidney Johnston,2.2.1803 (BC: False),6.4.1862 (BC: False)
+Albert Einstein,14.3.1879 (BC: False),18.4.1955 (BC: False)
+Alexander the Great,20.7.356 (BC: True),10.6.323 (BC: True)
+Alfred Korzybski,3.7.1879 (BC: False),1.3.1950 (BC: False)
+Alfred Hitchcock,13.8.1899 (BC: False),29.4.1980 (BC: False)
+Alfred Nobel,21.10.1833 (BC: False),10.12.1896 (BC: False)
+Alexander Graham Bell,3.3.1847 (BC: False),2.8.1922 (BC: False)
+Andy Warhol,6.8.1928 (BC: False),22.2.1987 (BC: False)
+Alp Arslan,20.1.1030 (BC: False),15.12.1072 (BC: False)
+Akira Kurosawa,23.3.1910 (BC: False),6.9.1998 (BC: False)
+A. E. van Vogt,26.4.1912 (BC: False),26.1.2000 (BC: False)
+Anna Kournikova,7.6.1981 (BC: False),'alive'
+Alfons Maria Jakob,2.7.1884 (BC: False),17.10.1931 (BC: False)
+Arne Kaijser,None.None.1950 (BC: False),'alive'
+Andrey Markov,14.6.1856 (BC: False),20.7.1922 (BC: False)
+A. A. Milne,18.1.1882 (BC: False),31.1.1956 (BC: False)
+Alvin Toffler,4.10.1928 (BC: False),27.6.2016 (BC: False)
+Albert Speer,19.3.1905 (BC: False),1.9.1981 (BC: False)
+Ada Lovelace,10.12.1815 (BC: False),27.11.1852 (BC: False)
+August Derleth,24.2.1909 (BC: False),4.7.1971 (BC: False)
+Albert Camus,7.11.1913 (BC: False),4.1.1960 (BC: False)
+Agatha Christie,15.9.1890 (BC: False),12.1.1976 (BC: False)
+Allen Ginsberg,3.6.1926 (BC: False),5.4.1997 (BC: False)
+Anatoly Karpov,23.5.1951 (BC: False),'alive'
+Aristophanes,None.None.446 (BC: True),None.None.386 (BC: True)
+Albert Schweitzer,14.1.1875 (BC: False),4.9.1965 (BC: False)
+Alexis Carrel,28.6.1873 (BC: False),5.11.1944 (BC: False)
+Anatole France,16.4.1844 (BC: False),12.10.1924 (BC: False)
+André Gide,22.11.1869 (BC: False),19.2.1951 (BC: False)
+Avicenna,23.8.980 (BC: False),22.6.1037 (BC: False)
+Abner Doubleday,26.6.1819 (BC: False),26.1.1893 (BC: False)
+Augustin-Jean Fresnel,10.5.1788 (BC: False),14.7.1827 (BC: False)
+Alan Garner,17.10.1934 (BC: False),'alive'
+Anaximander,None.None.610 (BC: True),None.None.546 (BC: True)
+Aleister Crowley,12.10.1875 (BC: False),1.12.1947 (BC: False)
+Alan Turing,23.6.1912 (BC: False),7.6.1954 (BC: False)
+Alexander Mackenzie (politician),28.1.1822 (BC: False),17.4.1892 (BC: False)
+Ashoka,None.None.304 (BC: True),None.None.232 (BC: True)
+Alfonso Cuarón,28.11.1961 (BC: False),'alive'
+Antoninus Pius,19.9.86 (BC: False),7.3.161 (BC: False)
+Augustus,23.9.63 (BC: True),19.8.14 (BC: False)
+Alfred Lawson,24.3.1869 (BC: False),29.11.1954 (BC: False)
+Arabian Prince,17.6.1965 (BC: False),'alive'
+André-Marie Ampère,20.1.1775 (BC: False),10.6.1836 (BC: False)
+Amos Bronson Alcott,29.11.1799 (BC: False),4.3.1888 (BC: False)
+Alan Kay,17.5.1940 (BC: False),'alive'
+Alfred Russel Wallace,8.1.1823 (BC: False),7.11.1913 (BC: False)
+Albert Alcibiades, Margrave of Brandenburg-Kulmbach,28.3.1522 (BC: False),8.1.1557 (BC: False)
+Albert the Bear,None.None.1100 (BC: False),18.11.1170 (BC: False)
+Albert of Brandenburg,28.6.1490 (BC: False),24.9.1545 (BC: False)
+Albert, Duke of Prussia,17.5.1490 (BC: False),20.3.1568 (BC: False)
+Ahmed I,19.4.1590 (BC: False),22.11.1617 (BC: False)
+Ahmed II,25.2.1643 (BC: False),6.2.1695 (BC: False)
+Ahmed III,30.12.1673 (BC: False),1.7.1736 (BC: False)
+Aga Khan III,2.11.1877 (BC: False),11.7.1957 (BC: False)
+Alexander Agassiz,17.12.1835 (BC: False),27.3.1910 (BC: False)
+Antonio Agliardi,4.9.1832 (BC: False),19.3.1915 (BC: False)
+Agrippina the Younger,6.11.15 (BC: False),23.3.59 (BC: False)
+Arthur Aikin,19.5.1773 (BC: False),15.4.1854 (BC: False)
+Afonso de Albuquerque,None.None.1453 (BC: False),16.12.1515 (BC: False)
+Alexander Jagiellon,5.8.1461 (BC: False),19.8.1506 (BC: False)
+Alexander III of Russia,10.3.1845 (BC: False),1.11.1894 (BC: False)
+Alexander I of Scotland,None.None.1078 (BC: False),23.4.1124 (BC: False)
+Alexander II of Scotland,24.8.1198 (BC: False),6.7.1249 (BC: False)
+Alexander I of Serbia,14.8.1876 (BC: False),11.6.1903 (BC: False)
+Alexander III of Scotland,4.9.1241 (BC: False),19.3.1286 (BC: False)
+Severus Alexander,None.None.208 (BC: False),19.3.235 (BC: False)
+Alexander Jannaeus,None.None.127 (BC: True),None.None.76 (BC: True)
+Alexios III Angelos,None.None.1153 (BC: False),None.None.1211 (BC: False)
+Alexios V Doukas,None.None.1140 (BC: False),None.12.1204 (BC: False)
+Alexei Petrovich, Tsarevich of Russia,28.2.1690 (BC: False),7.7.1718 (BC: False)
+Andrew Jackson,15.3.1767 (BC: False),8.6.1845 (BC: False)
+Andrew Johnson,29.12.1808 (BC: False),31.7.1875 (BC: False)
+Aleksandr Solzhenitsyn,11.12.1918 (BC: False),3.8.2008 (BC: False)
+Alessandro Algardi,27.11.1595 (BC: False),10.6.1654 (BC: False)
+Alger of Liège,None.None.1055 (BC: False),None.None.1131 (BC: False)
+Ibn al-Haytham,None.None.965 (BC: False),None.None.1040 (BC: False)
+Alessandro Allori,31.5.1535 (BC: False),22.9.1607 (BC: False)
+Afonso II of Portugal,23.4.1185 (BC: False),25.3.1223 (BC: False)
+Afonso III of Portugal,5.5.1210 (BC: False),16.2.1279 (BC: False)
+Afonso IV of Portugal,8.2.1291 (BC: False),28.5.1357 (BC: False)
+Afonso V of Portugal,15.1.1432 (BC: False),28.8.1481 (BC: False)
+Afonso VI of Portugal,21.8.1643 (BC: False),12.9.1683 (BC: False)
+Alfonso XII of Spain,28.11.1857 (BC: False),25.11.1885 (BC: False)
+Alfonso III of Aragon,4.11.1265 (BC: False),18.6.1291 (BC: False)
+Alfonso IV of Aragon,2.11.1299 (BC: False),24.1.1336 (BC: False)
+August Wilhelm Ambros,17.11.1816 (BC: False),28.6.1876 (BC: False)
+Abu Bakr,27.10.573 (BC: False),23.8.634 (BC: False)
+Anaxagoras,None.None.510 (BC: True),None.None.428 (BC: True)
+Andocides,None.None.440 (BC: True),None.None.390 (BC: True)
+Andrea Andreani,None.None.1540 (BC: False),None.None.1623 (BC: False)
+Andrew II of Hungary,None.None.1177 (BC: False),None.None.1235 (BC: False)
+Andronikos III Palaiologos,25.3.1297 (BC: False),15.6.1341 (BC: False)
+Andronikos II Palaiologos,25.3.1259 (BC: False),13.2.1332 (BC: False)
+Andronikos I Komnenos,None.None.1118 (BC: False),12.9.1185 (BC: False)
+Arnold Schwarzenegger,30.7.1947 (BC: False),'alive'
+Antoine Lavoisier,26.8.1743 (BC: False),8.5.1794 (BC: False)
+Hermann Kolbe,27.9.1818 (BC: False),25.11.1884 (BC: False)
+Amitabh Bachchan,11.10.1942 (BC: False),'alive'
+Agathocles of Syracuse,None.None.361 (BC: True),None.None.289 (BC: True)
+Augustin-Louis Cauchy,21.8.1789 (BC: False),23.5.1857 (BC: False)
+Archimedes,None.None.287 (BC: True),None.None.212 (BC: True)
+Alfred Jarry,8.9.1873 (BC: False),1.11.1907 (BC: False)
+Aimery of Cyprus,None.None.1153 (BC: False),None.None.1205 (BC: False)
+A. G. Spalding,2.9.1849 (BC: False),9.9.1915 (BC: False)
+Alessandro Volta,18.2.1745 (BC: False),5.3.1827 (BC: False)
+Alexander Fleming,6.8.1881 (BC: False),11.3.1955 (BC: False)
+Andrew Carnegie,25.11.1835 (BC: False),11.8.1919 (BC: False)
+Andrea Alciato,8.5.1492 (BC: False),12.1.1550 (BC: False)
+Alan Ayckbourn,12.4.1939 (BC: False),'alive'
+Alvar Aalto,3.2.1898 (BC: False),11.5.1976 (BC: False)
+A. J. Ayer,29.10.1910 (BC: False),27.6.1989 (BC: False)
+André Weil,6.5.1906 (BC: False),6.8.1998 (BC: False)
+Atle Selberg,14.6.1917 (BC: False),6.8.2007 (BC: False)
+Aeschylus,None.None.523 (BC: True),None.None.456 (BC: True)
+Andrew Wiles,11.4.1953 (BC: False),'alive'
+Anne Brontë,17.1.1820 (BC: False),28.5.1849 (BC: False)
+Augustine of Hippo,13.11.354 (BC: False),28.8.430 (BC: False)
+August Horch,12.10.1868 (BC: False),3.2.1951 (BC: False)
+Alexander Grothendieck,28.3.1928 (BC: False),13.11.2014 (BC: False)
+Amerigo Vespucci,9.3.1454 (BC: False),22.2.1512 (BC: False)
+Aristide Maillol,8.12.1861 (BC: False),27.9.1944 (BC: False)
+Antonio Canova,1.11.1757 (BC: False),13.10.1822 (BC: False)
+Auguste Rodin,12.11.1840 (BC: False),17.11.1917 (BC: False)
+Adam Weishaupt,6.2.1748 (BC: False),18.11.1830 (BC: False)
+Auguste and Louis Lumière,19.10.1862 (BC: False),10.4.1954 (BC: False)
+Andrew Tridgell,28.2.1967 (BC: False),'alive'
+Ani DiFranco,23.9.1970 (BC: False),'alive'
+Aaliyah,16.1.1979 (BC: False),25.8.2001 (BC: False)
+Anton Drexler,13.6.1884 (BC: False),24.2.1942 (BC: False)
+Ahmad Shah Massoud,2.9.1953 (BC: False),9.9.2001 (BC: False)
+Arcadius,1.1.377 (BC: False),1.5.408 (BC: False)
+Abdulaziz al-Omari,28.5.1979 (BC: False),11.9.2001 (BC: False)
+Aage Bohr,19.6.1922 (BC: False),8.9.2009 (BC: False)
+Antonio Salieri,None.None.3 (BC: False),None.None.74 (BC: False)
+Arthur Eddington,28.12.1882 (BC: False),22.11.1944 (BC: False)
+Alexis Korner,19.4.1928 (BC: False),1.1.1984 (BC: False)
+Arthur Miller,17.10.1915 (BC: False),10.2.2005 (BC: False)
+Anita Hill,30.7.1956 (BC: False),'alive'
+Avery Hopwood,28.5.1882 (BC: False),1.7.1928 (BC: False)
+Alessandro Scarlatti,2.5.1660 (BC: False),22.10.1725 (BC: False)
+Albert Pike,29.12.1809 (BC: False),2.4.1891 (BC: False)
+Andreas Aagesen,5.8.1826 (BC: False),26.10.1879 (BC: False)
+Alois Alzheimer,14.6.1864 (BC: False),19.12.1915 (BC: False)
+Akio Morita,26.1.1921 (BC: False),3.10.1999 (BC: False)
+Anthony Hopkins,31.12.1937 (BC: False),'alive'
+Ardal O'Hanlon,8.10.1965 (BC: False),'alive'
+Albrecht Dürer,21.5.1471 (BC: False),6.4.1528 (BC: False)
+Alban Berg,None.None.1885 (BC: False),None.None.1935 (BC: False)
+Ann Widdecombe,4.10.1947 (BC: False),'alive'
+Aurangzeb,4.11.1618 (BC: False),3.3.1707 (BC: False)
+Alberto Giacometti,10.10.1901 (BC: False),11.1.1966 (BC: False)
+Anton Chekhov,29.1.1860 (BC: False),15.7.1904 (BC: False)
+Arnulf of Carinthia,None.None.850 (BC: False),8.12.899 (BC: False)
+Agostino Carracci,None.None.1557 (BC: False),None.None.1602 (BC: False)
+Alexander Kerensky,4.5.1881 (BC: False),11.6.1970 (BC: False)
+Ansgar,8.9.801 (BC: False),3.2.865 (BC: False)
+Arthur Phillip,11.10.1738 (BC: False),31.8.1814 (BC: False)
+André the Giant,19.5.1946 (BC: False),27.1.1993 (BC: False)
+Antoine Thomson d'Abbadie,3.1.1810 (BC: False),19.3.1897 (BC: False)
+Abba Mari,None.None.1250 (BC: False),None.None.1306 (BC: False)
+Abbas II of Egypt,14.7.1874 (BC: False),19.12.1944 (BC: False)
+Abbas Mirza,20.8.1789 (BC: False),25.10.1833 (BC: False)
+George Abbot (bishop),29.10.1562 (BC: False),4.8.1633 (BC: False)
+Arthur St. Clair,23.3.1737 (BC: False),31.8.1818 (BC: False)
+Abdulaziz,8.2.1830 (BC: False),4.6.1876 (BC: False)
+Abdul Hamid I,20.3.1725 (BC: False),7.4.1789 (BC: False)
+Amy Grant,25.11.1960 (BC: False),'alive'
+Arthur William à Beckett,25.10.1844 (BC: False),14.1.1909 (BC: False)
+Anders Celsius,27.11.1701 (BC: False),25.4.1744 (BC: False)
+Adam Carolla,27.5.1964 (BC: False),'alive'
+Arthur J. Stone,None.None.1847 (BC: False),None.None.1938 (BC: False)
+Andrei Sakharov,21.5.1921 (BC: False),14.12.1989 (BC: False)
+Aron Nimzowitsch,7.11.1886 (BC: False),16.3.1935 (BC: False)
+Andreas Schlüter,None.None.1659 (BC: False),None.None.1714 (BC: False)
+Aung San Suu Kyi,19.6.1945 (BC: False),'alive'
+Abraham Joshua Heschel,11.1.1907 (BC: False),23.12.1972 (BC: False)
+Andrzej Sapkowski,21.6.1948 (BC: False),'alive'
+Amanda Hesser,None.None.1971 (BC: False),'alive'
+Archduke Charles, Duke of Teschen,5.9.1771 (BC: False),30.4.1847 (BC: False)
+Alex Lifeson,27.8.1953 (BC: False),'alive'
+Axayacatl,None.None.1449 (BC: False),None.None.1481 (BC: False)
+Amr Diab,11.10.1961 (BC: False),'alive'
+Anaïs Nin,21.2.1903 (BC: False),14.1.1977 (BC: False)
+Ariel Sharon,26.2.1928 (BC: False),11.1.2014 (BC: False)
+Arthur Laurents,14.7.1917 (BC: False),5.5.2011 (BC: False)
+Adrian Lamo,20.2.1981 (BC: False),14.3.2018 (BC: False)
+Alan Jay Lerner,31.8.1918 (BC: False),14.6.1986 (BC: False)
+Al Capp,28.9.1909 (BC: False),5.11.1979 (BC: False)
+Ann Druyan,13.6.1949 (BC: False),'alive'
+Alexey Pajitnov,16.4.1955 (BC: False),'alive'
+ʻAbdu'l-Bahá,23.5.1844 (BC: False),28.11.1921 (BC: False)
+Arthur Jensen,24.8.1923 (BC: False),22.10.2012 (BC: False)
+Albert Brooks,22.7.1947 (BC: False),'alive'
+Angela Vincent,None.None.1942 (BC: False),'alive'
+Akira Toriyama,5.4.1955 (BC: False),'alive'
+Andrew S. Tanenbaum,16.3.1944 (BC: False),'alive'
+Abu Zubaydah,12.3.1971 (BC: False),'alive'
+Adolphe Sax,6.11.1814 (BC: False),7.2.1894 (BC: False)
+Adin Steinsaltz,11.7.1937 (BC: False),'alive'
+A. E. Housman,26.3.1859 (BC: False),30.4.1936 (BC: False)
+Al Capone,17.1.1899 (BC: False),25.1.1947 (BC: False)
+Ahmed al-Nami,7.12.1977 (BC: False),11.9.2001 (BC: False)
+Ahmed al-Haznawi,11.10.1980 (BC: False),11.9.2001 (BC: False)
+Athanasius of Alexandria,None.None.296 (BC: False),2.5.373 (BC: False)
+Albert Frederick, Duke of Prussia,7.5.1553 (BC: False),28.8.1618 (BC: False)
+Anthony the Great,12.1.251 (BC: False),17.1.356 (BC: False)
+Anthony of Saxony,27.12.1755 (BC: False),6.6.1836 (BC: False)
+Albert III, Duke of Saxony,27.1.1443 (BC: False),12.9.1500 (BC: False)
+Arlo Guthrie,10.7.1947 (BC: False),'alive'
+Benjamin Lee Whorf,24.4.1897 (BC: False),26.7.1941 (BC: False)
+Bill Clinton,19.8.1946 (BC: False),'alive'
+Britney Spears,2.12.1981 (BC: False),'alive'
+Baruch Spinoza,24.11.1632 (BC: False),21.2.1677 (BC: False)
+Bjarne Stroustrup,30.12.1950 (BC: False),'alive'
+Björn Ulvaeus,25.4.1945 (BC: False),'alive'
+Benny Andersson,16.12.1946 (BC: False),'alive'
+Bill Gates,28.10.1955 (BC: False),'alive'
+Bal Thackeray,23.1.1926 (BC: False),17.11.2012 (BC: False)
+Bille August,9.11.1948 (BC: False),'alive'
+Bruce Sterling,14.4.1954 (BC: False),'alive'
+Brigitte Bardot,28.9.1934 (BC: False),'alive'
+Bernard Montgomery,17.11.1887 (BC: False),24.3.1976 (BC: False)
+Herman Boerhaave,31.12.1668 (BC: False),23.9.1738 (BC: False)
+Benjamin Disraeli,21.12.1804 (BC: False),19.4.1881 (BC: False)
+Bill Joy,8.11.1954 (BC: False),'alive'
+Bernie Federko,12.5.1956 (BC: False),'alive'
+Bram Stoker,8.11.1847 (BC: False),20.4.1912 (BC: False)
+Benoit Mandelbrot,20.11.1924 (BC: False),14.10.2010 (BC: False)
+Bing Crosby,3.5.1903 (BC: False),14.10.1977 (BC: False)
+Buckminster Fuller,12.7.1895 (BC: False),1.7.1983 (BC: False)
+Bill Watterson,5.7.1958 (BC: False),'alive'
+Brian Kernighan,1.1.1942 (BC: False),'alive'
+Bob Hawke,9.12.1929 (BC: False),16.5.2019 (BC: False)
+Blaise Pascal,19.6.1623 (BC: False),19.8.1662 (BC: False)
+Bartolomeo Ammannati,18.6.1511 (BC: False),13.4.1592 (BC: False)
+Bertrand Andrieu,24.11.1761 (BC: False),6.12.1822 (BC: False)
+Blythe Danner,3.2.1943 (BC: False),'alive'
+Bill Atkinson,17.3.1951 (BC: False),'alive'
+Bertrand Russell,18.5.1872 (BC: False),2.2.1970 (BC: False)
+Bill Walsh (American football coach),30.11.1931 (BC: False),30.7.2007 (BC: False)
+Babe Ruth,6.2.1895 (BC: False),16.8.1948 (BC: False)
+Berry Berenson,14.4.1948 (BC: False),11.9.2001 (BC: False)
+Brion Gysin,19.1.1916 (BC: False),13.7.1986 (BC: False)
+Barbara Olson,27.12.1955 (BC: False),11.9.2001 (BC: False)
+Bernardino Ochino,None.None.1487 (BC: False),None.None.1564 (BC: False)
+Brian De Palma,11.9.1940 (BC: False),'alive'
+Bobby Charlton,11.10.1937 (BC: False),'alive'
+Berthe Morisot,14.1.1841 (BC: False),2.3.1895 (BC: False)
+Bayezid I,10.5.1354 (BC: False),8.3.1403 (BC: False)
+Bayezid II,3.12.1447 (BC: False),26.5.1512 (BC: False)
+Brian Lara,2.5.1969 (BC: False),'alive'
+Barry Bonds,24.7.1964 (BC: False),'alive'
+Buddy Holly,7.9.1936 (BC: False),3.2.1959 (BC: False)
+Babrak Karmal,6.1.1929 (BC: False),3.12.1996 (BC: False)
+Billy Bob Thornton,4.8.1955 (BC: False),'alive'
+Beatrix Potter,28.7.1866 (BC: False),22.12.1943 (BC: False)
+Béla Bartók,None.None.1881 (BC: False),None.None.1945 (BC: False)
+Bill Haley,6.7.1925 (BC: False),9.2.1981 (BC: False)
+Burt Lancaster,2.11.1913 (BC: False),20.10.1994 (BC: False)
+Blind Willie McTell,5.5.1898 (BC: False),19.8.1959 (BC: False)
+Babur,14.2.1483 (BC: False),26.12.1530 (BC: False)
+Bernard of Clairvaux,None.None.1090 (BC: False),20.8.1153 (BC: False)
+Brian Aldiss,18.8.1925 (BC: False),19.8.2017 (BC: False)
+Blind Lemon Jefferson,24.9.1893 (BC: False),19.12.1929 (BC: False)
+Bud Selig,30.7.1934 (BC: False),'alive'
+Björn Borg,6.6.1956 (BC: False),'alive'
+Burhanuddin Rabbani,20.9.1940 (BC: False),20.9.2011 (BC: False)
+Bill Oddie,7.7.1941 (BC: False),'alive'
+Brian Boitano,22.10.1963 (BC: False),'alive'
+Billy Crystal,14.3.1948 (BC: False),'alive'
+Bruce Campbell,22.6.1958 (BC: False),'alive'
+William M. Tweed,3.4.1823 (BC: False),12.4.1878 (BC: False)
+Brownie McGhee,30.11.1915 (BC: False),16.2.1996 (BC: False)
+Barry Goldwater,2.1.1909 (BC: False),29.5.1998 (BC: False)
+Bob Wills,6.3.1905 (BC: False),13.5.1975 (BC: False)
+Barış Manço,2.1.1943 (BC: False),1.2.1999 (BC: False)
+B. F. Skinner,20.3.1904 (BC: False),18.8.1990 (BC: False)
+Bill Macy,18.5.1922 (BC: False),17.10.2019 (BC: False)
+Bob Knight,25.10.1940 (BC: False),'alive'
+Robert Bellarmine,4.10.1542 (BC: False),17.9.1621 (BC: False)
+Bert Bell,25.2.1895 (BC: False),11.10.1959 (BC: False)
+Bob Costas,22.3.1952 (BC: False),'alive'
+Bill Mumy,1.2.1954 (BC: False),'alive'
+Benjamin D. Santer,3.6.1955 (BC: False),'alive'
+Bill Bixby,22.1.1934 (BC: False),21.11.1993 (BC: False)
+Ben Bova,8.11.1932 (BC: False),'alive'
+Bjørn Lomborg,6.1.1965 (BC: False),'alive'
+Bruno of Querfurt,None.None.974 (BC: False),14.2.1009 (BC: False)
+Bo Diddley,30.12.1928 (BC: False),2.6.2008 (BC: False)
+Bela Lugosi,20.10.1882 (BC: False),16.8.1956 (BC: False)
+Brigham Young,None.None.1801 (BC: False),None.None.1877 (BC: False)
+Bill Bryson,8.12.1951 (BC: False),'alive'
+Charlize Theron,7.8.1975 (BC: False),'alive'
+Charlie Chaplin,16.4.1889 (BC: False),25.12.1977 (BC: False)
+Carl Linnaeus,23.5.1707 (BC: False),10.1.1778 (BC: False)
+Charlemagne,2.4.742 (BC: False),28.1.814 (BC: False)
+Chris Morris (satirist),15.6.1962 (BC: False),'alive'
+C. Northcote Parkinson,30.7.1909 (BC: False),9.3.1993 (BC: False)
+Cypress Hill,None.None.1991 (BC: False),None.None.1993 (BC: False)
+Caspar David Friedrich,5.9.1774 (BC: False),7.5.1840 (BC: False)
+Courtney Love,9.7.1964 (BC: False),'alive'
+Colin Dexter,29.9.1930 (BC: False),21.3.2017 (BC: False)
+Claude Shannon,30.4.1916 (BC: False),24.2.2001 (BC: False)
+Charles Babbage,26.12.1791 (BC: False),18.10.1871 (BC: False)
+Chuck D,1.8.1960 (BC: False),'alive'
+Catherine Coleman,14.12.1960 (BC: False),'alive'
+Clement Attlee,3.1.1883 (BC: False),8.10.1967 (BC: False)
+Catullus,None.None.84 (BC: True),None.None.54 (BC: True)
+C. S. Forester,27.8.1899 (BC: False),2.4.1966 (BC: False)
+Carlo Goldoni,25.2.1707 (BC: False),6.2.1793 (BC: False)
+Charles Baudelaire,9.4.1821 (BC: False),31.8.1867 (BC: False)
+C. S. Lewis,29.11.1898 (BC: False),22.11.1963 (BC: False)
+Confucius,None.None.551 (BC: True),None.None.479 (BC: True)
+Craig Charles,11.7.1964 (BC: False),'alive'
+Charles Dickens,7.2.1812 (BC: False),9.6.1870 (BC: False)
+Carbon dioxide,None.None.3 (BC: False),None.None.15 (BC: False)
+Charles Tupper,2.7.1821 (BC: False),30.10.1915 (BC: False)
+Cicero,3.1.106 (BC: True),7.12.43 (BC: True)
+Commodores,None.None.1977 (BC: False),None.None.1978 (BC: False)
+Carl von Clausewitz,1.6.1780 (BC: False),16.11.1831 (BC: False)
+Charles Robert Malden,9.8.1797 (BC: False),23.5.1855 (BC: False)
+Charles Sanders Peirce,10.9.1839 (BC: False),19.4.1914 (BC: False)
+Carl Friedrich Gauss,30.4.1777 (BC: False),23.2.1855 (BC: False)
+Christoph Ludwig Agricola,5.11.1667 (BC: False),8.8.1719 (BC: False)
+Cecil B. DeMille,12.8.1881 (BC: False),21.1.1959 (BC: False)
+Constantin von Tischendorf,18.1.1815 (BC: False),7.12.1874 (BC: False)
+Calvin Coolidge,4.7.1872 (BC: False),5.1.1933 (BC: False)
+Charles Ancillon,28.7.1659 (BC: False),5.7.1715 (BC: False)
+Clark Ashton Smith,13.1.1893 (BC: False),14.8.1961 (BC: False)
+Carl Menger,23.2.1840 (BC: False),26.2.1921 (BC: False)
+Christian Goldbach,18.3.1690 (BC: False),20.11.1764 (BC: False)
+Clement Martyn Doke,16.5.1893 (BC: False),24.2.1980 (BC: False)
+Carl Meinhof,23.7.1857 (BC: False),11.2.1944 (BC: False)
+Carolyn Beug,11.12.1952 (BC: False),11.9.2001 (BC: False)
+Charles Farrar Browne,26.4.1834 (BC: False),6.3.1867 (BC: False)
+Charles Proteus Steinmetz,9.4.1865 (BC: False),26.10.1923 (BC: False)
+Charles Martel,None.None.688 (BC: False),None.None.741 (BC: False)
+Charles Edward Jones,8.11.1952 (BC: False),11.9.2001 (BC: False)
+Charlotte Brontë,21.4.1816 (BC: False),31.3.1855 (BC: False)
+Charles Williams (British writer),20.9.1886 (BC: False),15.5.1945 (BC: False)
+Czesław Miłosz,30.6.1911 (BC: False),14.8.2004 (BC: False)
+Claude Monet,14.11.1840 (BC: False),5.12.1926 (BC: False)
+Columba,7.12.521 (BC: False),9.6.597 (BC: False)
+Charles McCarry,14.6.1930 (BC: False),26.2.2019 (BC: False)
+Constantin Brâncuși,19.2.1876 (BC: False),16.3.1957 (BC: False)
+Claus Sluter,None.None.1340 (BC: False),None.None.1403 (BC: False)
+Clyde Tombaugh,4.2.1906 (BC: False),17.1.1997 (BC: False)
+Chris Marker,29.7.1921 (BC: False),29.7.2012 (BC: False)
+Constantius II,7.8.317 (BC: False),3.11.361 (BC: False)
+Constans,None.None.323 (BC: False),None.None.350 (BC: False)
+Carl Sagan,9.11.1934 (BC: False),20.12.1996 (BC: False)
+Cy Young,29.3.1867 (BC: False),4.11.1955 (BC: False)
+Caligula,31.8.12 (BC: False),24.1.41 (BC: False)
+Chiang Kai-shek,31.10.1887 (BC: False),5.4.1975 (BC: False)
+Carlos Valderrama,2.9.1961 (BC: False),'alive'
+Cecilia Beaux,1.5.1855 (BC: False),17.9.1942 (BC: False)
+Crowded House,None.None.1986 (BC: False),None.None.1993 (BC: False)
+Colette,28.1.1873 (BC: False),3.8.1954 (BC: False)
+Charles Alston,28.11.1907 (BC: False),27.4.1977 (BC: False)
+Catherine of Aragon,16.12.1485 (BC: False),7.1.1536 (BC: False)
+Colin Powell,5.4.1937 (BC: False),'alive'
+Christiaan Barnard,8.11.1922 (BC: False),2.9.2001 (BC: False)
+Caravaggio,29.9.1571 (BC: False),18.7.1610 (BC: False)
+Confederate States of America,None.None.1861 (BC: False),None.None.1863 (BC: False)
+Caitlin Clarke,3.5.1952 (BC: False),9.9.2004 (BC: False)
+Christian Doppler,29.11.1803 (BC: False),17.3.1853 (BC: False)
+Cotton Mather,12.2.1663 (BC: False),13.2.1728 (BC: False)
+Cordwainer Smith,11.7.1913 (BC: False),6.8.1966 (BC: False)
+William Kidd,None.None.1655 (BC: False),23.5.1701 (BC: False)
+Cary Elwes,26.10.1962 (BC: False),'alive'
+Chris Sarandon,24.7.1942 (BC: False),'alive'
+Christopher Guest,5.2.1948 (BC: False),'alive'
+Carol Kane,18.6.1952 (BC: False),'alive'
+Claudius Aelianus,None.None.175 (BC: False),None.None.235 (BC: False)
+Charles Messier,26.6.1730 (BC: False),12.4.1817 (BC: False)
+Clement of Alexandria,None.None.150 (BC: False),None.None.215 (BC: False)
+Carl Barks,27.3.1901 (BC: False),25.8.2000 (BC: False)
+Casimir III the Great,30.4.1310 (BC: False),5.11.1370 (BC: False)
+Cyril of Alexandria,None.None.376 (BC: False),None.None.444 (BC: False)
+Chris Cunningham,15.10.1970 (BC: False),'alive'
+Charles I of England,19.11.1600 (BC: False),30.1.1649 (BC: False)
+Camille Pissarro,10.7.1830 (BC: False),13.11.1903 (BC: False)
+Carlo Collodi,24.11.1826 (BC: False),26.10.1890 (BC: False)
+Clive Anderson,10.12.1952 (BC: False),'alive'
+Catherine of Siena,25.3.1347 (BC: False),29.4.1380 (BC: False)
+Charles Lyell,14.11.1797 (BC: False),22.2.1875 (BC: False)
+Cuauhtémoc,None.None.1497 (BC: False),None.None.1525 (BC: False)
+Cesare Borgia,13.9.1475 (BC: False),12.3.1507 (BC: False)
+Christine Lavin,2.1.1952 (BC: False),'alive'
+Cem Karaca,5.4.1945 (BC: False),8.2.2004 (BC: False)
+Calista Flockhart,11.11.1964 (BC: False),'alive'
+Charles Evans Hughes,11.4.1862 (BC: False),27.8.1948 (BC: False)
+Craig Venter,14.10.1946 (BC: False),'alive'
+Carl Rogers,8.1.1902 (BC: False),4.2.1987 (BC: False)
+Clive Barker,5.10.1952 (BC: False),'alive'
+Chaim Topol,9.9.1935 (BC: False),'alive'
+Crystal Eastman,25.6.1881 (BC: False),8.7.1928 (BC: False)
+Christopher Alexander,4.10.1936 (BC: False),'alive'
+Charles F. Hockett,17.1.1916 (BC: False),3.11.2000 (BC: False)
+Clarence Brown,10.5.1890 (BC: False),17.8.1987 (BC: False)
+Charles Mingus,22.4.1922 (BC: False),5.1.1979 (BC: False)
+Chuck Jones,21.9.1912 (BC: False),22.2.2002 (BC: False)
+Cyril M. Kornbluth,2.7.1923 (BC: False),21.3.1958 (BC: False)
+C. L. Moore,24.1.1911 (BC: False),4.4.1987 (BC: False)
+Claude Piron,26.2.1931 (BC: False),22.1.2008 (BC: False)
+Charles C. Krulak,4.3.1942 (BC: False),'alive'
+Chet Atkins,20.6.1924 (BC: False),30.6.2001 (BC: False)
+Clara Petacci,28.2.1912 (BC: False),28.4.1945 (BC: False)
+Claude Louis Berthollet,9.12.1748 (BC: False),6.11.1822 (BC: False)
+Claude Auchinleck,21.6.1884 (BC: False),23.3.1981 (BC: False)
+Camilla Hall,24.3.1945 (BC: False),17.5.1974 (BC: False)
+The Amazing Criswell,7.8.1907 (BC: False),4.10.1982 (BC: False)
+Drew Barrymore,22.2.1975 (BC: False),'alive'
+D. W. Griffith,22.1.1875 (BC: False),23.7.1948 (BC: False)
+David Lynch,20.1.1946 (BC: False),'alive'
+David Cronenberg,15.3.1943 (BC: False),'alive'
+Dale Earnhardt,29.4.1951 (BC: False),18.2.2001 (BC: False)
+Dalton Trumbo,9.12.1905 (BC: False),10.9.1976 (BC: False)
+David D. Friedman,12.2.1945 (BC: False),'alive'
+David Thompson (explorer),30.4.1770 (BC: False),10.2.1857 (BC: False)
+David Fincher,28.8.1962 (BC: False),'alive'
+Douglas Engelbart,30.1.1925 (BC: False),2.7.2013 (BC: False)
+Dr. Dre,18.2.1965 (BC: False),'alive'
+Douglas Adams,11.3.1952 (BC: False),11.5.2001 (BC: False)
+Donald Knuth,10.1.1938 (BC: False),'alive'
+Dave Grohl,14.1.1969 (BC: False),'alive'
+Dino Zoff,28.2.1942 (BC: False),'alive'
+Dave Brubeck,6.12.1920 (BC: False),5.12.2012 (BC: False)
+Dwight D. Eisenhower,14.10.1890 (BC: False),28.3.1969 (BC: False)
+Desmond Morris,24.1.1928 (BC: False),'alive'
+Denis Diderot,5.10.1713 (BC: False),31.7.1784 (BC: False)
+Deng Xiaoping,22.8.1904 (BC: False),19.2.1997 (BC: False)
+Democritus,None.None.460 (BC: True),None.None.370 (BC: True)
+Dennis Ritchie,9.9.1941 (BC: False),12.10.2011 (BC: False)
+Doris Day,3.4.1922 (BC: False),13.5.2019 (BC: False)
+David Hilbert,23.1.1862 (BC: False),14.2.1943 (BC: False)
+David Letterman,12.4.1947 (BC: False),'alive'
+Delroy Lindo,18.11.1952 (BC: False),'alive'
+David Janssen,27.3.1931 (BC: False),13.2.1980 (BC: False)
+David Mamet,30.11.1947 (BC: False),'alive'
+Danny Elfman,29.5.1953 (BC: False),'alive'
+David Hayes Agnew,24.11.1818 (BC: False),22.3.1892 (BC: False)
+Dwight Schultz,24.11.1947 (BC: False),'alive'
+Dave Barry,3.7.1947 (BC: False),'alive'
+David Angell,10.4.1946 (BC: False),11.9.2001 (BC: False)
+Dwight L. Moody,5.2.1837 (BC: False),22.12.1899 (BC: False)
+David Ricardo,18.4.1772 (BC: False),11.9.1823 (BC: False)
+Diego Maradona,30.10.1960 (BC: False),'alive'
+David Brewster,11.12.1781 (BC: False),10.2.1868 (BC: False)
+Domitian,24.10.51 (BC: False),18.9.96 (BC: False)
+Stephen Donaldson (activist),27.7.1946 (BC: False),18.7.1996 (BC: False)
+Daniel Jones (phonetician),12.9.1881 (BC: False),4.12.1967 (BC: False)
+David Beckham,2.5.1975 (BC: False),'alive'
+Dava Sobel,15.6.1947 (BC: False),'alive'
+Donald Rumsfeld,9.7.1932 (BC: False),'alive'
+David Rice Atchison,11.8.1807 (BC: False),26.1.1886 (BC: False)
+Daniel Gabriel Fahrenheit,24.5.1686 (BC: False),16.9.1736 (BC: False)
+Dan Bricklin,16.7.1951 (BC: False),'alive'
+Dave Winer,2.5.1955 (BC: False),'alive'
+Dolly Parton,19.1.1946 (BC: False),'alive'
+Dirk Benedict,1.3.1945 (BC: False),'alive'
+David Deutsch,18.5.1953 (BC: False),'alive'
+Daniel Dennett,28.3.1942 (BC: False),'alive'
+Douglas Hofstadter,15.2.1945 (BC: False),'alive'
+Desi Arnaz,2.3.1917 (BC: False),2.12.1986 (BC: False)
+Daniel Ortega,11.11.1945 (BC: False),'alive'
+Dorothy Parker,22.8.1893 (BC: False),7.6.1967 (BC: False)
+Dylan Thomas,27.10.1914 (BC: False),9.11.1953 (BC: False)
+David Bowie,8.1.1947 (BC: False),10.1.2016 (BC: False)
+Dennis Hopper,17.5.1936 (BC: False),29.5.2010 (BC: False)
+Donald Dewar,21.8.1937 (BC: False),11.10.2000 (BC: False)
+David Beatty, 1st Earl Beatty,17.1.1871 (BC: False),12.3.1936 (BC: False)
+Donald A. Wollheim,1.10.1914 (BC: False),2.11.1990 (BC: False)
+Dr. Seuss,2.3.1904 (BC: False),24.9.1991 (BC: False)
+Dan Simmons,4.4.1948 (BC: False),'alive'
+Denis Auguste Affre,28.9.1793 (BC: False),27.6.1848 (BC: False)
+Denis Leary,18.8.1957 (BC: False),'alive'
+Dean Koontz,9.7.1945 (BC: False),'alive'
+Don Rosa,29.6.1951 (BC: False),'alive'
+Dziga Vertov,2.1.1896 (BC: False),12.2.1954 (BC: False)
+David Huffman,10.5.1945 (BC: False),27.2.1985 (BC: False)
+Derek Walcott,23.1.1930 (BC: False),17.3.2017 (BC: False)
+Dana Rohrabacher,21.6.1947 (BC: False),'alive'
+Dunstan,None.None.909 (BC: False),19.5.988 (BC: False)
+Don McLean,2.10.1945 (BC: False),'alive'
+Danny Kaye,18.1.1911 (BC: False),3.3.1987 (BC: False)
+Dan DeCarlo,12.12.1919 (BC: False),18.12.2001 (BC: False)
+Django Reinhardt,23.1.1910 (BC: False),16.5.1953 (BC: False)
+Dana Plato,7.11.1964 (BC: False),8.5.1999 (BC: False)
+Jacques-Louis David,30.8.1748 (BC: False),29.12.1825 (BC: False)
+Dave Thomas (businessman),2.7.1932 (BC: False),8.1.2002 (BC: False)
+Duke Kahanamoku,24.8.1890 (BC: False),22.1.1968 (BC: False)
+Damon Runyon,4.10.1880 (BC: False),10.12.1946 (BC: False)
+Dale Chihuly,20.9.1941 (BC: False),'alive'
+Dean Kamen,5.4.1951 (BC: False),'alive'
+Davy Jones (musician),30.12.1945 (BC: False),29.2.2012 (BC: False)
+Dolly (sheep),5.7.1996 (BC: False),14.2.2003 (BC: False)
+Dolores Fuller,10.3.1923 (BC: False),9.5.2011 (BC: False)
+Donald Campbell,23.3.1921 (BC: False),4.1.1967 (BC: False)
+Edward Bellamy,26.3.1850 (BC: False),22.5.1898 (BC: False)
+Ernst Mayr,5.7.1904 (BC: False),3.2.2005 (BC: False)
+Elvis Presley,8.1.1935 (BC: False),16.8.1977 (BC: False)
+Erasmus Darwin,12.12.1731 (BC: False),18.4.1802 (BC: False)
+Edward Sapir,26.1.1884 (BC: False),4.2.1939 (BC: False)
+Errol Morris,5.2.1948 (BC: False),'alive'
+Ernest Hemingway,21.7.1899 (BC: False),2.7.1961 (BC: False)
+Egyptian Lover,31.8.1963 (BC: False),'alive'
+Eric S. Raymond,4.12.1957 (BC: False),'alive'
+Edmund Stoiber,28.9.1941 (BC: False),'alive'
+Enya,17.5.1961 (BC: False),'alive'
+Elias Canetti,25.7.1905 (BC: False),14.8.1994 (BC: False)
+Edward Jenner,17.5.1749 (BC: False),26.1.1823 (BC: False)
+Edvard Grieg,15.6.1843 (BC: False),4.9.1907 (BC: False)
+Erwin Rommel,15.11.1891 (BC: False),14.10.1944 (BC: False)
+Edmund Husserl,8.4.1859 (BC: False),27.4.1938 (BC: False)
+Edgar Allan Poe,19.1.1809 (BC: False),7.10.1849 (BC: False)
+Empedocles,None.None.494 (BC: True),None.None.434 (BC: True)
+Eric Hoffer,25.7.1898 (BC: False),21.5.1983 (BC: False)
+E. E. Cummings,14.10.1894 (BC: False),3.9.1962 (BC: False)
+Ernest Rutherford,30.8.1871 (BC: False),19.10.1937 (BC: False)
+Édouard Manet,23.1.1832 (BC: False),30.4.1883 (BC: False)
+Elizabeth Barrett Browning,6.3.1806 (BC: False),29.6.1861 (BC: False)
+Edgar Rice Burroughs,1.9.1875 (BC: False),19.3.1950 (BC: False)
+Eugène Viollet-le-Duc,27.1.1814 (BC: False),17.9.1879 (BC: False)
+Ernst Haeckel,16.2.1834 (BC: False),9.8.1919 (BC: False)
+Prince Eugene of Savoy,18.10.1663 (BC: False),21.4.1736 (BC: False)
+Emanuel Leutze,24.5.1816 (BC: False),18.7.1868 (BC: False)
+Elizabeth Garrett Anderson,9.6.1836 (BC: False),17.12.1917 (BC: False)
+Edwin Austin Abbey,1.4.1852 (BC: False),1.8.1911 (BC: False)
+Ernest Thayer,14.8.1863 (BC: False),21.8.1940 (BC: False)
+Eden Phillpotts,4.11.1862 (BC: False),29.12.1960 (BC: False)
+Eli Whitney,8.12.1765 (BC: False),8.1.1825 (BC: False)
+E. B. White,11.7.1899 (BC: False),1.10.1985 (BC: False)
+Emma Goldman,27.6.1869 (BC: False),14.5.1940 (BC: False)
+Edvard Munch,12.12.1863 (BC: False),23.1.1944 (BC: False)
+Erin Brockovich,22.6.1960 (BC: False),'alive'
+Euripides,None.None.480 (BC: True),None.None.415 (BC: True)
+Emily Brontë,30.7.1818 (BC: False),19.12.1848 (BC: False)
+E. E. Smith,2.5.1890 (BC: False),31.8.1965 (BC: False)
+Évariste Galois,25.10.1811 (BC: False),31.5.1832 (BC: False)
+Ennius,None.None.239 (BC: True),None.None.169 (BC: True)
+Edna St. Vincent Millay,22.2.1892 (BC: False),19.10.1950 (BC: False)
+Æthelberht of Kent,None.None.550 (BC: False),24.2.616 (BC: False)
+Erwin Schrödinger,12.8.1887 (BC: False),4.1.1961 (BC: False)
+Ed Sullivan,28.9.1901 (BC: False),13.10.1974 (BC: False)
+Élisabeth Vigée Le Brun,16.4.1755 (BC: False),30.3.1842 (BC: False)
+Eleanor of Aquitaine,None.None.1122 (BC: False),1.4.1204 (BC: False)
+Edward Mitchell Bannister,2.11.1828 (BC: False),9.1.1901 (BC: False)
+Emil Kraepelin,15.2.1856 (BC: False),7.10.1926 (BC: False)
+Edsger W. Dijkstra,11.5.1930 (BC: False),6.8.2002 (BC: False)
+Edmund Burke,12.1.1729 (BC: False),9.7.1797 (BC: False)
+Eric Clapton,30.3.1945 (BC: False),'alive'
+Elizabeth Gracen,3.4.1961 (BC: False),'alive'
+El Cid,None.None.1043 (BC: False),10.7.1099 (BC: False)
+Æthelred the Unready,None.None.966 (BC: False),23.4.1016 (BC: False)
+Eugene Wigner,17.11.1902 (BC: False),1.1.1995 (BC: False)
+Erasmus Reinhold,22.10.1511 (BC: False),19.2.1553 (BC: False)
+Ezra Abbot,28.4.1819 (BC: False),21.3.1884 (BC: False)

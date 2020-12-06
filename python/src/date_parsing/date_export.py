@@ -1,7 +1,10 @@
-from utilities import attr_type_constraint
+from utilities import attr_type_constraint, utils
+from utilities.runtime_constants import RuntimeConstants
 import re
 from date_parsing.date_format import DateFormat
-
+from datetime import datetime
+from collections import namedtuple
+import numpy as np
 
 @attr_type_constraint.auto_attr_check
 class DateExport:
@@ -10,9 +13,17 @@ class DateExport:
         """
         Initialize DateExport with year month and day values
         """
+        if month == "None" or month is None:
+            self.month = None
+        else:
+            self.month = month
+
+        if day == "None" or day is None:
+            self.day = None
+        else:
+            self.day = day
+
         self.year = year
-        self.month = month
-        self.day = day
         self.BC = bc
 
     @classmethod
@@ -94,16 +105,56 @@ class DateExport:
             return True
 
         if not birth.BC and not death.BC:
-            return birth.year < death.year
+            return birth.year < death.year and (death.year - birth.year < 110)
         elif birth.BC and not death.BC:
-            return True
+            return True and (death.year + birth.year < 110)
         elif not birth.BC and death.BC:
             return False
         elif birth.BC and death.BC:
-            return birth.year > death.year
+            return birth.year > death.year and (birth.year - death.year < 110)
 
         return False
 
+    @staticmethod
+    def could_meet(b1,d1,b2,d2):
+
+        parse = re.search(r"(.+?)\.(.+?)\.(\d+)\W?(BC)?", b1)
+        b1_date = DateExport(parse[3], 12 if parse[2] == "None" else parse[2], 31 if parse[1] == "None" else parse[1], parse[4] == "BC")
+
+        if d1 == "alive":
+            d1_date = DateExport(RuntimeConstants.CURRENT_YEAR, 12, 31)
+        else:
+            parse = re.search(r"(.+?)\.(.+?)\.(\d+)\W?(BC)?", d1)
+            d1_date = DateExport(parse[3], 12 if parse[2] == "None" else parse[2], 31 if parse[1] == "None" else parse[1], parse[4] == "BC")
+
+        parse = re.search(r"(.+?)\.(.+?)\.(\d+)\W?(BC)?", b2)
+        b2_date = DateExport(parse[3], 12 if parse[2] == "None" else parse[2], 31 if parse[1] == "None" else parse[1], parse[4] == "BC")
+
+        if d2 == "alive":
+            d2_date = DateExport(RuntimeConstants.CURRENT_YEAR, 12, 31)
+        else:
+            parse = re.search(r"(.+?)\.(.+?)\.(\d+)\W?(BC)?", d2)
+            d2_date = DateExport(parse[3], 12 if parse[2] == "None" else parse[2], 31 if parse[1] == "None" else parse[1], parse[4] == "BC")
+
+        Range = namedtuple('Range', ['start', 'end'])
+        r1 = Range(start=b1_date.__iso8601_str__(), end=d1_date.__iso8601_str__())
+        r2 = Range(start=b2_date.__iso8601_str__(), end=d2_date.__iso8601_str__())
+
+        latest_start = max(r1.start, r2.start)
+        earliest_end = min(r1.end, r2.end)
+        delta = (earliest_end - latest_start)
+        overlap = max(0, delta)
+
+        return overlap > 0
+
+    def __iso8601_str__(self):
+        string = ("-" if self.BC else "+") + "%04d-%02d-%02dT00:00:00Z" % (int(self.year), int(self.month), int(self.day))
+        date_str = string.strip()
+        if date_str[0] == '+':
+            date_str = date_str[1:]
+        date_str = date_str.split('-00', maxsplit=1)[0]
+        dt = np.datetime64(date_str)
+        return dt.astype('<M8[s]').astype(np.int64)
     def __sub__(self, o):
         return DateExport(self.year - o.year, self.month - o.month, self.day - o.day)
 

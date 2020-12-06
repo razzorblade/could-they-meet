@@ -21,6 +21,8 @@ def update_progress(progress):
     sys.stdout.write(text)
     sys.stdout.flush()
 
+def get_overlap(a, b):
+    return max(0, min(a[1], b[1]) - max(a[0], b[0]))
 
 # source: https://stackoverflow.com/questions/5194057/better-way-to-convert-file-sizes-in-python
 def get_smart_file_size(bytes_size):

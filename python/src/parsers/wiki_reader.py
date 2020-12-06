@@ -79,6 +79,21 @@ class MediaWikiDumpReader:
             death_date_found = False
             correct_age = False
 
+            # Check if it is a person
+            person_check = re.search(
+                r"\[\[Category:.*?(births|actors|actor|painters|citizens|painter|lutherans|woman|women|singers|singer|politician|deaths|photographers|artists|wrestlers|emigrants|[pP]hysicists|theorists|recipients).*?\]\]",
+                inner_page)
+
+            is_person = False
+            if person_check:
+                for p in person_check.groups():
+                    if p != "":
+                        is_person = True
+                        break
+
+            if not is_person:
+                continue
+
             # Go line by line
             for line in wrap(html.unescape(inner_page), 5000):
                 line = line.strip().lower()
@@ -91,7 +106,7 @@ class MediaWikiDumpReader:
 
                     # If nothing was found, do text search
                     if not birth_date_found and not death_date_found:
-                        (birth_date_found, birth_date, death_date_found, death_date) = self.extract_fulltext_dates(inner_page, line, exported_title)
+                        (birth_date_found, birth_date, death_date_found, death_date) = self.extract_fulltext_dates(line, exported_title)
 
                     # Set entity fields if dates were found. If death date not found, do
                     # additional statistical check whether person is still alive
@@ -314,7 +329,7 @@ class MediaWikiDumpReader:
         return False, None
 
     @staticmethod
-    def extract_fulltext_dates(fulltext, line, title):
+    def extract_fulltext_dates(line, title):
         """
         Matches a death date from line using regex
 
@@ -322,54 +337,36 @@ class MediaWikiDumpReader:
         :param line: String with wikipedia text from which dates will be exported, if present
         """
 
+        # Replace special chars so we can reduce amount of cases in regex
+        rep = {"&ndash;": "-", "&nbsp;": " ", "{{snd}}" : "-"}
+        rep = dict((re.escape(k), v) for k, v in rep.items())
+        pattern = re.compile("|".join(rep.keys()))
+        line = pattern.sub(lambda m: rep[re.escape(m.group(0))], line)
 
-        # Check if it is a person
-        person_check = re.search(
-            r"\[\[Category:.*?(births|actors|actor|painters|painter|lutherans|people|winner|winners|woman|women|man|men|singers|singer|politician|deaths|photographers|artists|wrestlers|)\]\]",
-            fulltext)
+        # Try to find birth date in text
+        # FORMAT: Name Surname (DD Month YYYY {{snd}} DD Month YYYY)
+        match = re.search(title.lower() + r"\W+\((\d{1,2})\W+([a-zA-Z]+)\W+?(\d+)\W*?(?:-| |to)\W*?(\d{1,2})\W+?([a-zA-Z]+)\W+(\d+).*?\)", line)
 
-        is_person = False
-        if person_check:
-            for p in person_check.groups():
-                if p != "":
-                    is_person = True
+        if match:
+            birth = DateExport(int(match[3]),DateExport.month_to_num(match[2]), int(match[1]))
+            death = DateExport(int(match[6]),DateExport.month_to_num(match[5]), int(match[4]))
+            return True, birth, True, death
 
+        # FORMAT: Name Surname (YYYY-YYYY)
+        match = re.search(title.lower() + r"\W+\(?([0-9]+).*?([0-9]+)\)",line)
+        if match:
+            return True, DateExport.from_format(match[1], DateFormat.YEAR_ONLY), True, DateExport.from_format(match[2], DateFormat.YEAR_ONLY)
 
-        if is_person:
-            # Replace special chars so we can reduce amount of cases in regex
-            rep = {"&ndash;": "-", "&nbsp;": " ", "{{snd}}" : "-"}
-            rep = dict((re.escape(k), v) for k, v in rep.items())
-            pattern = re.compile("|".join(rep.keys()))
-            line = pattern.sub(lambda m: rep[re.escape(m.group(0))], line)
+        # FORMAT: Name Surname (texttext c. YYYY - c. YYYY texttext)
+        match = re.search(title.lower() + r"\W*\(.*(?:c.|circa)\W*(\d+)\W*(?:c.|circa)\W*(\d+)\W+(bc)?.*\)", line)
+        if match:
+            birth = DateExport.from_format(match[1], DateFormat.YEAR_ONLY)
+            death = DateExport.from_format(match[2], DateFormat.YEAR_ONLY)
 
-            # Try to find birth date in text
-            # FORMAT: Name Surname (DD Month YYYY {{snd}} DD Month YYYY)
-            match = re.search(title.lower() + r"\W+\((\d{1,2})\W+([a-zA-Z]+)\W+?(\d+)\W*?(?:-| |to)\W*?(\d{1,2})\W+?([a-zA-Z]+)\W+(\d+).*?\)", line)
+            if match[3] == "bc":
+                birth.BC = True
+                death.BC = True
 
-            if match:
-                birth = DateExport(int(match[3]),DateExport.month_to_num(match[2]), int(match[1]))
-                death = DateExport(int(match[6]),DateExport.month_to_num(match[5]), int(match[4]))
-                return True, birth, True, death
-
-            # FORMAT: Name Surname (YYYY-YYYY)
-            match = re.search(title.lower() + r"\W+\(([0-9]+).*?([0-9]+)\)",line)
-            if match:
-                return True, DateExport.from_format(match[1], DateFormat.YEAR_ONLY), True, DateExport.from_format(match[2], DateFormat.YEAR_ONLY)
-
-            # FORMAT: Name Surname (texttext c. YYYY - c. YYYY texttext)
-            match = re.search(title.lower() + r"\W*\(.*(?:c.|circa)\W*(\d+)\W*(?:c.|circa)\W*(\d+).*\)", line)
-            if match:
-                return True, DateExport.from_format(match[1], DateFormat.YEAR_ONLY), True, DateExport.from_format(
-                    match[2], DateFormat.YEAR_ONLY)
-
-         #   # FORMAT: Name (names...) Surname (born Month DD, YYYY)
-         #   birth_date_match = re.search("([a-zA-Z\W]*) born ([a-zA-Z]+ \d{1,2},\W*\d{4})", line)
-
-         #   # Check if the title has something common with person's name in the .* previous content of the line
-         #   person_name_split = title.split(' ')
-         #   if all(elem in birth_date_match[0] for elem in person_name_split):
-         #       # export date
-         #       print("some new match on", title)
-         #       return True, DateExport.from_format(birth_date_match[2], DateFormat.AS_TEXT)
+            return True, birth, True, death
 
         return False, None, False, None

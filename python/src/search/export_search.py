@@ -83,19 +83,36 @@ class ExportSearch:
 
     def create_index(self, index_name):
         created = False
+
+        # if index exists, delete it
         self._es.indices.delete(index='people', ignore=[400, 404])
 
         # index settings
         mapping = {
             "settings": {
-                "number_of_shards": 1,
-                "number_of_replicas": 0
+                "analysis": {
+                    "filter": {
+                        "prefixes": {
+                            "type": "edge_ngram",
+                            "min_gram": 1,
+                            "max_gram": 25
+                        }
+                    },
+                    "analyzer": {
+                        "my_analyzer": {
+                            "type": "custom",
+                            "tokenizer": "standard",
+                            "filter": ["lowercase", "prefixes"]
+                        }
+                    }
+                }
             },
             "mappings": {
-                "dynamic": "strict",
                 "properties": {
                     "name": {
-                        "type": "text"  # formerly "string"
+                        "type": "text",
+                        "analyzer": "my_analyzer",
+                        "search_analyzer": "standard"
                     },
                     "birthdate": {
                         "type": "text"
@@ -138,23 +155,37 @@ class ExportSearch:
 
     def find(self, n1):
 
-       # query_body = {
-       #     "query": {
-       #         "match": {
-       #             "name": n1
-       #         }
-       #     }
-       # }
-
-        query_body={
-           "query": {
-                "match": {
-                    "message": {
-                        "query": n1
-                    }
-                }
-            }
-        }
+        query_body={'query':{'match':{'name': n1}}}
 
         res = self._es.search(index=self.index_name, body=query_body)
-        return res
+
+        # To get max score
+        #max_score = float(res['hits']['max_score'])
+
+        data = [doc for doc in res['hits']['hits']]
+
+        if data is None or len(data) == 0:
+            print("There is no person with this name. Try again.")
+            return False, None
+
+        # Check if is exact match
+        best_match = data[0]['_source']['name']
+
+        if best_match == n1:
+            return True, best_match, data[0]['_source']['birthdate'], data[0]['_source']['deathdate']
+
+        print("These are the best results. Please specify your query according to this list.")
+
+        num_of_print_recs = 0
+        for doc in data:
+
+            if num_of_print_recs >= 5:
+                break
+            num_of_print_recs += 1
+
+            # Just to show how to compute score in %
+            #score = float(doc['_score']) / max_score * 100
+
+            print("%s" % (doc['_source']['name']))
+
+        return False, None
