@@ -32,14 +32,29 @@ Progress: [====                ] 20.58%
 Size must be specified in bytes. For example `python main.py --splitter 2000000000 --input path/wikipedia.xml --output path/dump_split.xml`, will export 2GB of data into file dump_export.xml. The final size may be different from requested size, because splitter is also correctly ending `<page>` so there won't be any data without corresponding ending tags.
 
 # How to run person search
-1. Make sure you have file with exported people. You can download one from `data/dump_export.txt`.
-2. Go to could-they-meet/src/
-3. Run
+In order to correctly run searching, you must download Elasticsearch server and client from https://www.elastic.co/downloads/elasticsearch. Run `bin/elasticsearch.bat`.
 
+You must also install elasticsearch for your python environment using
 ```sh
-> python main.py --search --input path/dump_export.txt
-> Enter name of first person:  Albert Einstein
-> Enter name of second person: Elvis Presley
-Albert Einstein,14.3.1879 (BC: False),18.4.1955 (BC: False)
-Elvis Presley,8.1.1935 (BC: False),16.8.1977 (BC: False)
+pip install elasticsearch
+```
+or
+```sh
+conda install -c conda-forge elasticsearch 
+```
+1. Make sure you have file with exported people. You can download one from `data/whole_wiki_parsed.txt`.
+2. Go to could-they-meet/src/
+
+Now you need to index downloaded file with people. You can use
+```sh
+> python main.py --search-indexer --input ..data/whole_wiki_parsed.txt --bulk 10000
+```
+to index all records from txt file. Then you can use search to find people:
+```sh
+> python main.py --search
+Enter first name: >Buzz Aldrin
+Buzz Aldrin 20.1.1930 - alive
+Enter second name: >Albert Einstein
+Albert Einstein 14.3.1879 - 18.4.1955
+These people could meet!
 ```
