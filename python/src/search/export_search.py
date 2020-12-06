@@ -186,6 +186,6 @@ class ExportSearch:
             # Just to show how to compute score in %
             #score = float(doc['_score']) / max_score * 100
 
-            print("%s" % (doc['_source']['name']))
+            print(" - %s" % (doc['_source']['name']))
 
         return False, None

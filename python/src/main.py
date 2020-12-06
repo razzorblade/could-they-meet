@@ -7,6 +7,7 @@ from date_parsing.date_export import DateExport
 import os.path
 import signal
 import sys, getopt
+import re
 
 def load_gazetteer(gazetteer_path):
     file = open(gazetteer_path, "r")
@@ -15,7 +16,7 @@ def load_gazetteer(gazetteer_path):
     return keywords
 
 def signal_handler(sig, frame):
-    print('\nParsing interrupted. All parsed content is in output file.')
+    print('\nApplication interrupted.')
     sys.exit(0)
 
 def run_indexer(file, bulk_size):
@@ -26,8 +27,6 @@ def run_indexer(file, bulk_size):
     print("Indexing is complete.")
 
 def search_person():
-    # name1 = input("Enter name of first person:  ")
-    # name2 = input("Enter name of second person: ")
     search = ExportSearch("people")
 
     # To create index and build types
@@ -44,7 +43,7 @@ def search_person():
 
     if res[0]:
         person1_name, person1_birth, person1_death = res[1], res[2], res[3]
-        print(person1_name, person1_birth,  "-",person1_death)
+        print(person1_name, person1_birth.__str__().replace("None.None.", ""), "-",person1_death.__str__().replace("None.None.", ""))
 
     name2 = input("Enter second name: ")
     res = search.find(name2)
@@ -54,7 +53,7 @@ def search_person():
 
     if res[0]:
         person2_name, person2_birth, person2_death = res[1], res[2], res[3]
-        print(person2_name, person2_birth, "-", person2_death)
+        print(person2_name, person2_birth.__str__().replace("None.None.", ""), "-", person2_death.__str__().replace("None.None.", ""))
 
 
     # now we have both people and their dates
