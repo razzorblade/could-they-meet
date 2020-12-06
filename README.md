@@ -52,4 +52,9 @@ Now you need to index downloaded file with people. You can use
 to index all records from txt file. Then you can use search to find people:
 ```sh
 > python main.py --search
+Enter first name: >Buzz Aldrin
+Buzz Aldrin 20.1.1930 - alive
+Enter second name: >Albert Einstein
+Albert Einstein 14.3.1879 - 18.4.1955
+These people could meet!
 ```
